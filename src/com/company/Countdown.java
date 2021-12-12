@@ -7,10 +7,6 @@ public class Countdown {
         stopwatch.timer.start();
         stopwatch.timer2.start();
 
-
-
-
-
     }
 
 }
