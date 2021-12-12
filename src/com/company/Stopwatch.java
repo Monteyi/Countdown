@@ -32,7 +32,7 @@ public class Stopwatch  {
 
     });
 
-    Timer timer1 = new Timer(1000, new ActionListener() {
+    Timer timer2 = new Timer(1000, new ActionListener() {
 
         public void actionPerformed(ActionEvent e) {
 
@@ -48,21 +48,6 @@ public class Stopwatch  {
     });
 
 
-    Timer timer2 = new Timer(1000, new ActionListener() {
-
-        public void actionPerformed(ActionEvent e) {
-
-            elapsedTime = elapsedTime - 1000;
-            minute = (elapsedTime / 60000) % 60;
-            second = (elapsedTime / 1000) % 60;
-            secondString = String.format("%02d", second);
-            minuteString = String.format("%02d", minute);
-            counterLabel3.setText(minuteString + ":" + secondString);
-
-        }
-
-    });
-
     Stopwatch() {
 
         counterLabel.setText(minuteString + ":" + secondString);
@@ -75,12 +60,6 @@ public class Stopwatch  {
         counterLabel2.setBounds(400,400,300,200);
         counterLabel2.setFont(new Font("Arial", Font.PLAIN,40));
         counterLabel2.setOpaque(true);
-
-
-        counterLabel3.setText(minuteString + ":" + secondString);
-        counterLabel3.setBounds(200,400,300,200);
-        counterLabel3.setFont(new Font("Arial", Font.PLAIN,40));
-        counterLabel3.setOpaque(true);
 
 
         frame.add(counterLabel);
