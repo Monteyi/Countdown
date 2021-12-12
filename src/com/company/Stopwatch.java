@@ -8,7 +8,6 @@ public class Stopwatch  {
     JFrame frame = new JFrame();
     JLabel counterLabel = new JLabel();
     JLabel counterLabel2 = new JLabel();
-    JLabel counterLabel3 = new JLabel();
 
 
     int elapsedTime = 900000;
@@ -54,7 +53,6 @@ public class Stopwatch  {
         counterLabel.setBounds(400, 100, 300, 200);
         counterLabel.setFont(new Font("Arial", Font.PLAIN, 40));
         counterLabel.setOpaque(true);
-
 
         counterLabel2.setText(minuteString + ":" + secondString);
         counterLabel2.setBounds(400,400,300,200);
